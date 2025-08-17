@@ -1,0 +1,400 @@
+  <!DOCTYPE html>
+  <html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Kurnia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Particles.js -->
+<script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+
+
+
+
+
+
+  </head>
+  <body class="bg-black text-white">
+
+    <!-- Navbar -->
+<header id="navbar" class="fixed w-full top-0 left-0 z-50 bg-black/50 backdrop-blur-lg border-b border-gray-800 transition-all duration-300">
+  <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <!-- Logo -->
+    <div class="text-xl font-bold tracking-wide hover:scale-105 transition-transform">
+      Kurnia<span class="text-blue-500">Dev</span>
+    </div>
+
+    <!-- Desktop Menu -->
+    <ul class="hidden md:flex gap-6">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Hard Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <!-- Mobile Button -->
+    <button id="menu-btn" class="md:hidden text-2xl"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden flex-col px-6 py-4 space-y-4 bg-gray-900 md:hidden">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#skills" class="nav-link">Hard Skills</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+</header>
+
+
+<!-- Hero with Particles Background -->
+<section class="relative max-w-7xl mx-auto px-6 py-20 flex flex-col md:flex-row items-center gap-10 fade-in opacity-0 translate-y-10">
+
+  <!-- Particles Canvas -->
+  <div id="particles-js" class="absolute inset-0 -z-10"></div>
+
+  <!-- Text -->
+  <div class="flex-1 relative z-10">
+    <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+      Hello! <span class="text-blue-500">I'm</span> Muhammad Rizki Kurniawan
+    </h1>
+    <p class="mt-4 text-gray-400">
+      An enthusiastic undergraduate IT student at President University with a strong and growing interest in web
+      development. Passionate about building user-friendly and responsive websites using technologies such as
+      HTML, CSS, JavaScript, and modern frameworks. Currently interested in backend and frontend development,
+      and eager to keep learning new tools and best practices.
+    </p>
+
+    <!-- Buttons -->
+    <div class="mt-6 flex flex-wrap gap-4">
+      <a href="#contact" class="bg-blue-500 hover:bg-blue-600 px-5 py-3 rounded-lg text-white font-medium shadow-lg hover:shadow-blue-500/50 transition">
+        Let's Talk
+      </a>
+      <a href="#projects" class="border border-gray-600 hover:border-blue-500 px-5 py-3 rounded-lg text-white font-medium transition">
+        See Projects
+      </a>
+      <a href="assets/CV_RICKY.pdf" download
+         class="inline-flex items-center gap-3 bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white px-5 py-3 rounded-lg font-medium shadow-lg hover:shadow-purple-500/50 transition">
+        <i class="fa-solid fa-download text-lg"></i>
+        Download CV
+      </a>
+    </div>
+  </div>
+
+  <!-- Foto Profil Responsive -->
+<div class="flex-1 flex justify-center relative">
+  <div class="relative animate-pulse-slow">
+    <img src="assets/Photo_Prof.jpg" 
+         alt="Profile" 
+         class="rounded-full shadow-[0_0_60px_rgba(59,130,246,0.6)] 
+                w-48 sm:w-64 md:w-72 lg:w-80 
+                object-cover border-4 border-gray-900 transition-all duration-300">
+    <!-- Gradient overlay -->
+    <div class="absolute inset-0 rounded-full bg-gradient-to-b from-transparent to-black opacity-20"></div>
+  </div>
+</div>
+
+</section>
+
+
+    <!-- Logo bar -->
+<section class="bg-gray-900 py-8">
+  <div class="max-w-7xl mx-auto px-6 flex flex-wrap justify-center gap-12 text-5xl opacity-80">
+    <i class="devicon-html5-plain colored"></i>
+    <i class="devicon-css3-plain colored"></i>
+    <i class="devicon-javascript-plain colored"></i>
+    <i class="devicon-react-original colored"></i>
+    <i class="devicon-nodejs-plain colored"></i>
+    <i class="devicon-mysql-plain colored"></i>
+    <i class="devicon-tailwindcss-plain colored"></i>
+  </div>
+</section>
+
+  <!-- Hard Skills -->
+<section id="skills" class="max-w-7xl mx-auto px-6 py-20">
+  <h2 class="text-3xl font-bold mb-10">My Hard Skills</h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    
+    <!-- Frontend -->
+    <div class="bg-gray-900 p-6 rounded-xl shadow-lg">
+      <h3 class="text-xl font-semibold mb-4 text-blue-400">
+        <i class="fa-solid fa-code mr-2"></i>Frontend
+      </h3>
+      <div class="space-y-4">
+        <div>
+          <p class="text-sm">HTML <span class="float-right skill-percent" data-skill="90">0%</span></p>
+          <div class="w-full bg-gray-700 h-2 rounded-full">
+            <div class="bg-blue-500 h-2 rounded-full skill-bar" data-skill="90"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm">CSS <span class="float-right skill-percent" data-skill="85">0%</span></p>
+          <div class="w-full bg-gray-700 h-2 rounded-full">
+            <div class="bg-blue-500 h-2 rounded-full skill-bar" data-skill="85"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm">JavaScript <span class="float-right skill-percent" data-skill="80">0%</span></p>
+          <div class="w-full bg-gray-700 h-2 rounded-full">
+            <div class="bg-blue-500 h-2 rounded-full skill-bar" data-skill="80"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm">React <span class="float-right skill-percent" data-skill="75">0%</span></p>
+          <div class="w-full bg-gray-700 h-2 rounded-full">
+            <div class="bg-blue-500 h-2 rounded-full skill-bar" data-skill="75"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Backend & Database -->
+    <div class="bg-gray-900 p-6 rounded-xl shadow-lg">
+      <h3 class="text-xl font-semibold mb-4 text-green-400">
+        <i class="fa-solid fa-server mr-2"></i>Backend & Database
+      </h3>
+      <div class="space-y-4">
+        <div>
+          <p class="text-sm">Node.js <span class="float-right skill-percent" data-skill="70">0%</span></p>
+          <div class="w-full bg-gray-700 h-2 rounded-full">
+            <div class="bg-green-500 h-2 rounded-full skill-bar" data-skill="70"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm">SQL <span class="float-right skill-percent" data-skill="85">0%</span></p>
+          <div class="w-full bg-gray-700 h-2 rounded-full">
+            <div class="bg-green-500 h-2 rounded-full skill-bar" data-skill="85"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm">Flask <span class="float-right skill-percent" data-skill="60">0%</span></p>
+          <div class="w-full bg-gray-700 h-2 rounded-full">
+            <div class="bg-green-500 h-2 rounded-full skill-bar" data-skill="60"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm">MySQL <span class="float-right skill-percent" data-skill="75">0%</span></p>
+          <div class="w-full bg-gray-700 h-2 rounded-full">
+            <div class="bg-green-500 h-2 rounded-full skill-bar" data-skill="75"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm">Firebase <span class="float-right skill-percent" data-skill="60">0%</span></p>
+          <div class="w-full bg-gray-700 h-2 rounded-full">
+            <div class="bg-green-500 h-2 rounded-full skill-bar" data-skill="60"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools & Others -->
+    <div class="bg-gray-900 p-6 rounded-xl shadow-lg">
+      <h3 class="text-xl font-semibold mb-4 text-purple-400">
+        <i class="fa-solid fa-wrench mr-2"></i>Tools & Others
+      </h3>
+      <div class="space-y-4">
+        <div>
+          <p class="text-sm">Git & GitHub <span class="float-right skill-percent" data-skill="85">0%</span></p>
+          <div class="w-full bg-gray-700 h-2 rounded-full">
+            <div class="bg-purple-500 h-2 rounded-full skill-bar" data-skill="85"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm">VSCode <span class="float-right skill-percent" data-skill="95">0%</span></p>
+          <div class="w-full bg-gray-700 h-2 rounded-full">
+            <div class="bg-purple-500 h-2 rounded-full skill-bar" data-skill="95"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm">Figma <span class="float-right skill-percent" data-skill="65">0%</span></p>
+          <div class="w-full bg-gray-700 h-2 rounded-full">
+            <div class="bg-purple-500 h-2 rounded-full skill-bar" data-skill="65"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm">Docker <span class="float-right skill-percent" data-skill="65">0%</span></p>
+          <div class="w-full bg-gray-700 h-2 rounded-full">
+            <div class="bg-purple-500 h-2 rounded-full skill-bar" data-skill="65"></div>
+          </div>
+        </div>
+        <div>
+          <p class="text-sm">MQTTX <span class="float-right skill-percent" data-skill="50">0%</span></p>
+          <div class="w-full bg-gray-700 h-2 rounded-full">
+            <div class="bg-purple-500 h-2 rounded-full skill-bar" data-skill="50"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="projects" class="bg-gray-950 py-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <h2 class="text-4xl font-bold text-center mb-12 text-white">My Projects</h2>
+
+    <div class="grid md:grid-cols-3 gap-10">
+
+      <!-- Project 1 -->
+      <div class="project-card bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition transform duration-300 group opacity-0 translate-y-10">
+        <div class="relative h-56 overflow-hidden">
+          <img src="assets/manufacturing.jpg" alt="Digital Twin Project" 
+               class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+            <a href="https://github.com/RickyKurrnn/DIgital-Twin-for-Final-Assembly" target="_blank" 
+               class="px-5 py-2 bg-blue-500 rounded-lg text-white font-semibold hover:bg-blue-600">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-white">Digital Twin For Final Assembly</h3>
+          <p class="text-gray-400 mt-3 leading-relaxed">
+            Developed a real-time attendance monitoring system for a doll assembly line prototype using RFID and IR sensors.
+          </p>
+          <p class="text-sm text-gray-500 mt-4">Client: PT Mattel Indonesia</p>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition transform duration-300 group opacity-0 translate-y-10">
+        <div class="relative h-56 overflow-hidden">
+          <img src="assets/webdashboard.jpg" alt="Dashboard Web" 
+               class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+            <a href="https://github.com/username/dashboard-project" target="_blank" 
+               class="px-5 py-2 bg-blue-500 rounded-lg text-white font-semibold hover:bg-blue-600">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-white">Company Website</h3>
+          <p class="text-gray-400 mt-3 leading-relaxed">
+            Currently Working on this Project.
+          </p>
+          <p class="text-sm text-gray-500 mt-4">Personal Project</p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card bg-gray-900 rounded-2xl overflow-hidden shadow-lg hover:scale-[1.02] transition transform duration-300 group opacity-0 translate-y-10">
+        <div class="relative h-56 overflow-hidden">
+          <img src="assets/manualcar.jpg" alt="IoT Monitoring System" 
+               class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+          <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition">
+            <a href="https://github.com/RickyKurrnn/Robotic-Arm" target="_blank" 
+               class="px-5 py-2 bg-blue-500 rounded-lg text-white font-semibold hover:bg-blue-600">
+              View on GitHub
+            </a>
+          </div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-2xl font-semibold text-white"> Manual IoT Controlled Car</h3>
+          <p class="text-gray-400 mt-3 leading-relaxed">
+            Developed a Prototype Robotic Arm for Industrial purpose that can be controlled manually by
+ joystick and button or Automatically
+          </p>
+          <p class="text-sm text-gray-500 mt-4">University Project</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Fun Facts Section -->
+<section class="max-w-7xl mx-auto px-6 py-20">
+  <h2 class="text-3xl font-bold mb-10 text-center fade-up opacity-0 translate-y-10">Fun Facts About Me</h2>
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+    
+    <!-- Fun Fact 1 -->
+    <div class="bg-gray-900 p-6 rounded-xl hover:scale-105 transition flex flex-col items-center fade-up opacity-0 translate-y-10" style="transition-delay: 0.1s;">
+      <i class="fa-solid fa-mug-hot text-yellow-400 text-4xl mb-4"></i>
+      <p class="text-gray-300">Coffeeholic ☕</p>
+    </div>
+    
+    <!-- Fun Fact 2 -->
+    <div class="bg-gray-900 p-6 rounded-xl hover:scale-105 transition flex flex-col items-center fade-up opacity-0 translate-y-10" style="transition-delay: 0.2s;">
+      <i class="fa-solid fa-briefcase text-green-400 text-4xl mb-4"></i>
+      <p class="text-gray-300">8+ Mini Project Completed</p>
+    </div>
+    
+    <!-- Fun Fact 3 -->
+    <div class="bg-gray-900 p-6 rounded-xl hover:scale-105 transition flex flex-col items-center fade-up opacity-0 translate-y-10" style="transition-delay: 0.3s;">
+      <i class="fa-solid fa-code text-blue-400 text-4xl mb-4"></i>
+      <p class="text-gray-300">Active Student since 2023</p>
+    </div>
+    
+    <!-- Fun Fact 4 -->
+    <div class="bg-gray-900 p-6 rounded-xl hover:scale-105 transition flex flex-col items-center fade-up opacity-0 translate-y-10" style="transition-delay: 0.4s;">
+      <i class="fa-solid fa-earth-asia text-purple-400 text-4xl mb-4"></i>
+      <p class="text-gray-300">Work in Anywhere🌍</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Animation Script -->
+<script>
+  const observerFunFact = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("opacity-100", "translate-y-0");
+        entry.target.classList.remove("opacity-0", "translate-y-10");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll(".fade-up").forEach(el => observerFunFact.observe(el));
+</script>
+
+<!-- Animation Styles -->
+<style>
+  .fade-up {
+    transition: all 0.6s ease-out;
+  }
+</style>
+
+   <!-- Let's Work Together - Improved Version -->
+<section id="contact" class="max-w-5xl mx-auto px-6 py-20 text-center">
+  <h2 class="text-3xl md:text-4xl font-bold mb-4">🚀 Let's Work Together</h2>
+  <p class="text-gray-400 max-w-2xl mx-auto mb-12 text-base md:text-lg">
+    Have an idea or project in mind? Reach out through your favorite platform below — fast, friendly, and fuss-free!
+  </p>
+
+  <div class="flex flex-wrap justify-center gap-6">
+    <!-- Email -->
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kurniakyr@gmail.com&su=Collaboration%20Request" 
+       target="_blank"
+       class="group relative bg-blue-600 text-white px-8 py-4 rounded-xl flex items-center gap-3 text-base md:text-lg font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:bg-blue-500 hover:shadow-blue-400/50">
+      <i class="fas fa-envelope text-lg transition-transform duration-300 group-hover:rotate-12"></i>
+      <span>Email Me</span>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/6285156342505" target="_blank"
+       class="group relative bg-green-600 text-white px-8 py-4 rounded-xl flex items-center gap-3 text-base md:text-lg font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:bg-green-500 hover:shadow-green-400/50">
+      <i class="fab fa-whatsapp text-lg transition-transform duration-300 group-hover:rotate-12"></i>
+      <span>WhatsApp</span>
+    </a>
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/m-rizki-kurniawan-8a226428b/" target="_blank"
+       class="group relative bg-gray-800 text-white px-8 py-4 rounded-xl flex items-center gap-3 text-base md:text-lg font-medium shadow-lg transition-all duration-300 hover:scale-105 hover:bg-gray-700 hover:shadow-blue-400/50">
+      <i class="fab fa-linkedin text-lg transition-transform duration-300 group-hover:rotate-12"></i>
+      <span>LinkedIn</span>
+    </a>
+  </div>
+</section>
+
+
+
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+  </html>
